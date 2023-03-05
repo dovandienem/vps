@@ -21,7 +21,11 @@ JOB: $ matrix.go}}
 
 steps:
 
-- name: Set up Go ${{ matrix.go }} uses: actions/setup-go@vi with: go-version: ${{ matrix.go}}
+- name: Set up Go ${{ matrix.go }}
+
+uses: actions/setup-go@vi
+
+with: go-version: ${{ matrix.go}}
 
 id: go
 
